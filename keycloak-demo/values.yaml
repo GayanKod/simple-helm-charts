@@ -19,3 +19,10 @@ middleware:
 
 
 # helm template keycloak-release keycloak-demo --output-dir ./manifests
+
+# helm template my-release my-chart --output-dir ./my-manifests
+# In this example:
+
+# my-release is the name of the Helm release you want to generate the manifest for
+# my-chart is the name of the Helm chart you want to use to generate the manifest
+# --output-dir specifies the directory where the generated manifest file will be saved
