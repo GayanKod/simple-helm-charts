@@ -1,0 +1,20 @@
+metadata:
+  appName: keycloak
+  namespace: keycloak-dev
+
+image:
+  name: quay.io/keycloak/keycloak
+  tag: latest
+
+env:
+  kc_admin: admin
+  kc_admin_pw: admin
+  kc_proxy: edge
+  kc_hostname: keycloak.demo.com
+
+middleware:
+  name: strip-keycloak
+  
+
+
+

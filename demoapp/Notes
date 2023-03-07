@@ -1,0 +1,6 @@
+To deploy dev
+
+Create a values-dev.yaml and
+Run this command,
+helm install mydemoapp-release-dev demoapp/ --values demoapp/values.yaml -f demoapp/values-dev.yaml -n dev
+

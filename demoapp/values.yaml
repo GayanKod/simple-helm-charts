@@ -1,0 +1,12 @@
+appName: mydemoapp
+
+namespace: default
+
+configmap:
+    name: helmappconfigmapv1.1
+    data:
+      CUSTOM_HEADER: "This app was deployed with helM!"
+
+image:
+  name: devopsjourney1/mydemoapp
+  tag: latest
