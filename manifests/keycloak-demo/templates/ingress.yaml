@@ -1,0 +1,24 @@
+---
+# Source: keycloak-demo/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: keycloak
+  namespace: keycloak-dev
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+    # traefik.ingress.kubernetes.io/router.middlewares: "keycloak-dev-strip-keycloak@kubernetescrd"
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: keycloak.demo.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: keycloak
+            port:
+              number: 8080
+

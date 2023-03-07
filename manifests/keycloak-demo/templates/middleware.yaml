@@ -1,0 +1,11 @@
+---
+# Source: keycloak-demo/templates/middleware.yaml
+# apiVersion: traefik.containo.us/v1alpha1
+# kind: Middleware
+# metadata:
+#   name: strip-keycloak
+#   namespace: keycloak-dev
+# spec:
+#   stripPrefix:
+#     prefixes:
+#       - /auth
