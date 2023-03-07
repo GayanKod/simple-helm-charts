@@ -18,3 +18,4 @@ middleware:
 
 
 
+# helm template keycloak-release keycloak-demo --output-dir ./manifests
